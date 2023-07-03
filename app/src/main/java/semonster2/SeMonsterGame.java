@@ -2,6 +2,7 @@ package semonster2;
 
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Random;
 
 public class SeMonsterGame {
 
@@ -30,6 +31,22 @@ public class SeMonsterGame {
     Player player = this.playerMap.get(playerName);
     player.drawMonsters();
     System.out.println(player);
+  }
+
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    Random random = new Random();
+    LinkedList<Integer> monsterList = new LinkedList<>();
+      for(int i=0; i < 10; i++){
+        monsterList.add(random.nextInt(5));
+      }
+    Monster monster = new Monster(random.nextInt(5),random.nextInt(5));
+    Player player = new Player(monsterList, "user");
+    sb.append(player.toString());
+    sb.append("VS\n");
+    sb.append(monster.toString());
+    return sb.toString();
   }
 
 }
