@@ -6,11 +6,19 @@ public class Monster {
 
   Monster(int nameNum, int rareNum) {
     this.name = this.summonMonster(nameNum);
+    if(rareNum >= 3){
+      this.name = this.summonMonster2(nameNum);
+    }
     this.rare = rareNum;
   }
 
   String summonMonster(int mnumber) {
     String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
+    return monsters[mnumber];
+  }
+
+  String summonMonster2(int mnumber) {
+    String monsters[] = { "スライム2", "サハギン2", "ドラゴン2", "デュラハン2", "シーサーペント2" };
     return monsters[mnumber];
   }
 
