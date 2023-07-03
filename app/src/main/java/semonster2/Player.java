@@ -18,7 +18,7 @@ public class Player {
    * モンスターを5体分drawする．利用するランダムな値(0~4)はrandomNumberListから取得する
    */
   public void drawMonsters() {
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 8; i++) {
       this.monsterDeck.add(new Monster(this.randomNumberList.pop(), this.randomNumberList.pop()));
     }
   }

@@ -9,6 +9,12 @@ public class PlayerTest {
     @Test
     public void testtoString(){
         LinkedList<Integer> monsterList = new LinkedList<>();
+        monsterList.add(7);
+        monsterList.add(7);
+        monsterList.add(6);
+        monsterList.add(6);
+        monsterList.add(5);
+        monsterList.add(5);
         monsterList.add(4);
         monsterList.add(4);
         monsterList.add(3);
