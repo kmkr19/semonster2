@@ -1,7 +1,7 @@
 package semonster2;
 
 public class Monster {
-    String name;
+  String name;
   int rare;// 1:normal,2:uncommon,3:rare,4:ultra rare
 
   Monster(int nameNum, int rareNum) {
@@ -18,7 +18,7 @@ public class Monster {
   }
 
   String summonMonster2(int mnumber) {
-    String monsters[] = { "スライム2", "サハギン2", "ドラゴン2", "デュラハン2", "シーサーペント2" };
+    String monsters[] = { "ギガスライム", "ギガサハギン", "ギガドラゴン", "テラデュラハン", "テラシーサーペント" };
     return monsters[mnumber];
   }
 

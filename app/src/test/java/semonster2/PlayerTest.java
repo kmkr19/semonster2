@@ -6,7 +6,7 @@ import org.junit.Assert;
 public class PlayerTest {
     @Test
     public void testtoString(){
-        Player player = new Player();
-        Assert.assertEquals("スライム2:レア度[3]\n",monstertest.toString());
+        Player player = new Player(0,0);
+        Assert.assertEquals("スライム2:レア度[2]\n",player.toString());
     }
 }

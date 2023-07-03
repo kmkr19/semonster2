@@ -9,6 +9,7 @@ public class Player {
   LinkedList<Integer> randomNumberList;// randomな0~4の数値を必要な数保存しておく
 
   Player(LinkedList<Integer> randomNumberList, String playerName) {
+    
     this.randomNumberList = randomNumberList;
     this.name = playerName;
   }
